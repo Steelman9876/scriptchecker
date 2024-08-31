@@ -9,7 +9,7 @@
     <script>
         function sendMessage(phoneNumber) {
             const formattedPhoneNumber = phoneNumber.replace(/\D/g, '');
-            const message = encodeURIComponent("Hi, how are you?");
+            const message = encodeURIComponent("Asslamoalaikum, My name is [] . We met at []. I just wanted to say you that:");
             const whatsappURL = `https://wa.me/${formattedPhoneNumber}?text=${message}`;
             window.location.href = whatsappURL;
         }
